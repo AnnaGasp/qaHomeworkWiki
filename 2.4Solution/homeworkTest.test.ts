@@ -68,6 +68,7 @@ describe("Employee Manager 1.2", () => {
             await (await driver.findElement(nameInput)).getAttribute("value")
         ).toBe("Bernice Ortiz");
         });
+        
 
         test("A canceled change doesn't persist", async () => {
             /*

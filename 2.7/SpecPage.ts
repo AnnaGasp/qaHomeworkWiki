@@ -1,6 +1,6 @@
 import{ Builder, WebDriver, Capabilities, By, until, WebElement} from "selenium-webdriver";
 const chromedriver = require("chromedriver");
-const driver: WebDriver= new Builder().withCapabilities(Capabilities.chrome()).build();
+const driver:WebDriver = new Builder().withCapabilities(Capabilities.chrome()).build()
 
 export class SpecPage{
     driver:WebDriver;
@@ -25,3 +25,5 @@ export class SpecPage{
         return this.driver.findElement(this.results).getText()
     }
 }
+
+// adding comment
